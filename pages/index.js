@@ -1,7 +1,8 @@
-import Head from 'next/head'
-import Banner from '../components/homepage/Banner'
-import Home from '../components/homepage/Home'
-import Navbar from '../components/homepage/Navbar'
+import Head from "next/head";
+import Banner from "../components/homepage/Banner";
+import Home from "../components/homepage/Home";
+import Navbar from "../components/homepage/Navbar";
+import Title from "../components/homepage/Title";
 
 export default function HomePage() {
   return (
@@ -14,7 +15,12 @@ export default function HomePage() {
         <Banner />
         <Navbar />
         <Home />
+        <Title title="Promotions">
+          <button>Child btn</button>
+        </Title>
+        <Title title="What Our Customers Say" centered></Title>
+        <Title title="Why Us" centered></Title>
       </div>
     </div>
-  )
+  );
 }

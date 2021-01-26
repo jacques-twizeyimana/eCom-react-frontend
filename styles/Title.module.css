@@ -1,0 +1,32 @@
+/* title  */
+.title {
+  width: 100%;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+.title.title__center {
+  text-align: center;
+}
+
+.title .title__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title .title__content .title__info {
+  flex: 1;
+}
+
+.title .title__underline {
+  margin-top: 0.4rem;
+  height: 0.3rem;
+  background-color: brown;
+}
+
+.title.title__center .title__underline {
+  margin-top: 0.7rem !important;
+  margin: 0 auto;
+}
+/* end title */
