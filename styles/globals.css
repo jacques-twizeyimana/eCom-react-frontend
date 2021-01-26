@@ -1,0 +1,35 @@
+@font-face { 
+  font-family: "Montserrat";
+  src: url('/assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face { 
+  font-family: "MontserratLight";
+  src: url('/assets/fonts/Montserrat/Montserrat-Thin.ttf');
+}
+
+@font-face { 
+  font-family: "MontserratBold";
+  src:url('/assets/fonts/Montserrat/Montserrat-Black.ttf');
+}
+
+@font-face { 
+  font-family: "edosz";
+  src: url('/assets/fonts/edo_sz/edosz.ttf');
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+html,body{
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.font-edo{
+  font-family: "edosz",sans-serif !important;
+}
+.font-mo-bold{
+  font-family: "MontserratBold", sans-serif;
+}
