@@ -1,6 +1,6 @@
 .welcome{
   background: rgba(0,0,0,.62);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.7)),url("../public/img/about-us-page-bg-camera.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.7)),url("../public/img/about-us/about-us-page-bg-camera.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
