@@ -10,6 +10,7 @@ import Newsletter from "../components/homepage/Newsletter";
 import Stories from "../components/homepage/Stories";
 import Brands from "../components/homepage/Brands";
 import Electronics from "../components/homepage/Electronics";
+import Promotions from "../components/homepage/Promotions";
 export default function HomePage() {
   return (
     <div>
@@ -21,11 +22,8 @@ export default function HomePage() {
         <Banner />
         <Navbar />
         <Home />
-        {/* <Title title="Promotions">
-          <button>Child btn</button>
-        </Title> */}
+        <Promotions></Promotions>
         <Electronics></Electronics>
-        <Title title="Top Brands"></Title>
         <Brands />
         <WhyUs></WhyUs>
         <Title title=" Our Satsfied Customers Says" centered></Title>
