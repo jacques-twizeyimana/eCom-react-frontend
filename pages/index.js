@@ -5,10 +5,13 @@ import Navbar from "../components/homepage/Navbar";
 import Title from "../components/homepage/Title";
 import WhyUs from "../components/homepage/WhyUs";
 
+import BestSeller from '../components/homepage/BestSeller'
+
 import Footer from "../components/homepage/Footer";
 import Newsletter from "../components/homepage/Newsletter";
 import Stories from "../components/homepage/Stories";
 import Brands from "../components/homepage/Brands";
+
 export default function HomePage() {
   return (
     <div>
@@ -20,6 +23,9 @@ export default function HomePage() {
         <Banner />
         <Navbar />
         <Home />
+        
+        <Title title="The Bestsellers"></Title>
+        <BestSeller/>
         {/* <Title title="Promotions">
           <button>Child btn</button>
         </Title>
