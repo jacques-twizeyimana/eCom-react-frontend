@@ -28,7 +28,8 @@ export default function WhyUs() {
       <Title title="Why Shop With Us" centered></Title>
       <div
         className={
-          "p-16 flex justify-between flex-wrap " + styles.WhyUs__content
+          "p-16 flex justify-between flex-wrap mt-8 mb-16 " +
+          styles.WhyUs__content
         }
       >
         {shopWithUsData.map((record) => (
