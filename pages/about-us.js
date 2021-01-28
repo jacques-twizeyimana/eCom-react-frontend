@@ -27,7 +27,7 @@ export default function AboutUs (){
                     <img src="/img/about-us/about-us-girl-with-laptop.jfif" alt="Girl with laptop" className={"block w-full max-h-96"}/>
                 </div>
                 <div className="px-5 py-8 md:px-16 md:py-10 lg:px-20 lg:py-12">
-                    <h2 className="font-bold font-sans text-left text-3xl">Globally Connected by Large Network</h2>
+                    <h2 className="font-bold font-sans text-left text-3xl">Globally connected by large network</h2>
                     <p className="font-bold mt-8">We are here to listen from you deliver excellence</p>
                     <div className="desc">
                         <p className="font-thin mt-10">

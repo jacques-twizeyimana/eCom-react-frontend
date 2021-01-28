@@ -22,13 +22,12 @@ export default function HomePage() {
         <Banner />
         <Navbar />
         <Home />
-        <Promotions></Promotions>
-        <Electronics></Electronics>
+        <Promotions />
+        <Electronics />
         <Brands />
-        <WhyUs></WhyUs>
+        <WhyUs />
         <Title title=" Our Satsfied Customers Says" centered></Title>
         <Stories />
-
         <Newsletter />
         <Footer />
       </div>
