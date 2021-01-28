@@ -5,6 +5,10 @@ import Navbar from "../components/homepage/Navbar";
 import Title from "../components/homepage/Title";
 import WhyUs from "../components/homepage/WhyUs";
 
+import Footer from "../components/homepage/Footer";
+import Newsletter from "../components/homepage/Newsletter";
+import Stories from "../components/homepage/Stories";
+import Brands from "../components/homepage/Brands";
 export default function HomePage() {
   return (
     <div>
@@ -20,7 +24,14 @@ export default function HomePage() {
           <button>Child btn</button>
         </Title>
         <Title title="What Our Customers Say" centered></Title> */}
+        <Title title="Top Brands"></Title>
+        <Brands />
         <WhyUs></WhyUs>
+        <Title title=" Our Satsfied Customers Says" centered></Title>
+        <Stories />
+
+        <Newsletter />
+        <Footer />
       </div>
     </div>
   );
