@@ -1,0 +1,13 @@
+/* Why Us */
+.WhyUs__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  width: 30%;
+  border-right: 3px solid black;
+}
+
+.WhyUs__item img {
+  width: 5rem;
+}
+/* end of Why Us */
