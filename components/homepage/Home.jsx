@@ -13,7 +13,7 @@ export default function Home() {
           </p>
 
           <div className="mt-12 text-left">
-            <button className="text-lg text-gray-300  bg-black font-bold font-mo-bold rounded-md py-3 px-4 focus:outline-none hover:bg-gray-800">
+            <button className="text-lg text-gray-300 border border-black bg-black font-bold font-mo-bold rounded-md py-3 px-4 focus:outline-none hover:bg-transparent hover:border-white">
               SHOP NOW &rarr;
             </button>
           </div>

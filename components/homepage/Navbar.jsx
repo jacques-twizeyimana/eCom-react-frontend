@@ -20,10 +20,10 @@ export default function Navbar() {
             </div>
 
             <ul className={"hidden md:flex md:flex-row"} id="mobileMenu">
-              <li className="pr-5 my-2 md:my-auto sm:hidden lg:inline-block ">
+              <li className="pr-5 my-2 md:my-auto sm:hidden lg:inline-block ipad-pro-hidden">
                 <a> Home</a>
               </li>
-              <li className="pr-5 my-2 sm:hidden lg:inline-block md:my-auto">
+              <li className="pr-5 my-2 sm:hidden lg:inline-block md:my-auto ">
                 <a> Shop</a>
               </li>
               <li className="pr-5 my-2 sm:hidden lg:inline-block md:my-auto">
@@ -37,14 +37,14 @@ export default function Navbar() {
                   </sup>
                 </a>
               </li>
-              <li className="pr-5 my-2  sm:hidden lg:inline-block md:my-auto">
+              <li className="pr-5 my-2  sm:hidden lg:inline-block md:my-auto ipad-pro-hidden">
                 <a> About</a>
               </li>
-              <li className="pr-5 my-2  sm:hidden lg:inline-block md:my-auto">
+              <li className="pr-5 my-2  sm:hidden lg:inline-block md:my-auto ipad-pro-hidden">
                 <a> Contact</a>
               </li>
 
-              <li className="md:my-auto search border py-1 px-3 border-gray-300 rounded-md ">
+              <li className="md:my-auto search border py-1 px-2 border-gray-300 rounded-md ">
                 <svg
                   className="inline"
                   xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ export default function Navbar() {
                   />
                 </svg>
                 <input
-                  className=" mx-2 text-sm placeholder-black text-black bg-transparent focus:outline-none"
+                  className="mx-2 text-sm placeholder-black text-black bg-transparent focus:outline-none"
                   placeholder="Search here..."
                   type="text"
                   name="search"
