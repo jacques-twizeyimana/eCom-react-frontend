@@ -14,20 +14,20 @@ export default function Navbar() {
                     </div>
             
                     <ul className={"hidden md:flex md:flex-row"} id="mobileMenu">
-                        <li className="pr-5 my-2 md:my-auto sm:hidden lg:inline-block "><a> Home</a></li>
-                        <li className="pr-5 my-2 sm:hidden lg:inline-block md:my-auto"><a> Shop</a></li>
+                        <li className="pr-5 my-2 md:my-auto sm:hidden lg:inline-block ipad-pro-hidden"><a> Home</a></li>
+                        <li className="pr-5 my-2 sm:hidden lg:inline-block md:my-auto "><a> Shop</a></li>
                         <li className="pr-5 my-2 sm:hidden lg:inline-block md:my-auto"><a> Latest
                         <sup className={"sm:hidden lg:inline-block "}>
                             <span className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-600 rounded-sm ml-1">HOT</span></sup>
                         </a>
                         </li>
-                        <li className="pr-5 my-2  sm:hidden lg:inline-block md:my-auto"><a> About</a></li>
-                        <li className="pr-5 my-2  sm:hidden lg:inline-block md:my-auto"><a> Contact</a></li>
+                        <li className="pr-5 my-2  sm:hidden lg:inline-block md:my-auto ipad-pro-hidden"><a> About</a></li>
+                        <li className="pr-5 my-2  sm:hidden lg:inline-block md:my-auto ipad-pro-hidden"><a> Contact</a></li>
 
 
-                        <li className="md:my-auto search border py-1 px-3 border-gray-300 rounded-md ">
+                        <li className="md:my-auto search border py-1 px-2 border-gray-300 rounded-md ">
                             <svg  className="inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z" fill="rgba(52,72,94,1)"/></svg>
-                            <input  className=" mx-2 text-sm placeholder-black text-black bg-transparent focus:outline-none" placeholder="Search here..." type="text" name="search" id="searchInput"/>
+                            <input  className="mx-2 text-sm placeholder-black text-black bg-transparent focus:outline-none" placeholder="Search here..." type="text" name="search" id="searchInput"/>
                         </li>
                     </ul>
 

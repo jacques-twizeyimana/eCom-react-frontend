@@ -8,7 +8,7 @@ export default function Home() {
                     <p className="text-gray-300 text-lg text-left mt-12">Often, the body paragraph demonstrates and develops your topic sentence through many things and its your choice to decide the best.</p>
 
                     <div className="mt-12 text-left">
-                        <button className="text-lg text-gray-300  bg-black font-bold font-mo-bold rounded-md py-3 px-4 focus:outline-none hover:bg-gray-800">SHOP NOW &rarr;</button>
+                        <button className="text-lg text-gray-300 border border-black bg-black font-bold font-mo-bold rounded-md py-3 px-4 focus:outline-none hover:bg-transparent hover:border-white">SHOP NOW &rarr;</button>
                     </div>
                 </div>
                 <div className="slide-controls hidden md:block md:col-span-1 lg:col-span-1 my-auto">
