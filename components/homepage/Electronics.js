@@ -1,12 +1,52 @@
 import Title from "./Title";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination } from "swiper";
+import { useEffect, useState } from "react";
+import { average } from "color.js";
 
+SwiperCore.use([Pagination]);
 export default function Electronics() {
+  const [color, setcolor] = useState("");
+  const image = "./img/mug5.jpg";
+
+  useEffect(() => {
+    async function getColorFromPhoto() {
+      setcolor(await average(image, { format: "hex" }));
+    }
+    getColorFromPhoto();
+  }, [image]);
+
+  const slides = [
+    { id: 1 },
+    { id: 2 },
+    { id: 3 },
+    { id: 4 },
+    { id: 5 },
+    { id: 6 },
+    { id: 7 },
+    { id: 8 },
+  ];
+
   return (
     <div className="mx-16">
       <Title title="Electronics"></Title>
-      <div className={"m-10 flex items-center h-96"}>
-        <div className="flex-1 p-5 border-2 h-full">swiper</div>
-        <div className="my-10 px-20 bg-black text-white p-5 w-1/2 h-full flex flex-col justify-center">
+      <div className={"m-10 flex items-center h-96 bg-black"}>
+        <div className="flex-1 h-full w-1/2">
+          <Swiper
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+            className="w-full"
+          >
+            {slides.map((slide) => (
+              <SwiperSlide key={slide.id}>
+                <img src={image} className="h-96"></img>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <div className="my-10 px-20 text-white p-5 w-1/2 h-full flex flex-col justify-center">
           <h1 className="font-weight-bold mb-10 text-2xl font-bold">
             Technology Related
           </h1>
