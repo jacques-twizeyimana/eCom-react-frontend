@@ -15,12 +15,12 @@ export default function Product({ product = {} }) {
     }
   }, [product]);
   return (
-    <div className="product w-1/4">
+    <div className="product w-1/4 mr-2">
       <div className="product__content w-full h-80">
         <img src={displayProduct.image} className="h-full"></img>
       </div>
       <div
-        className="product__info text-white p-6 text-center"
+        className="product__info text-white p-6 text-center cursor-pointer"
         style={{ backgroundColor: displayProduct.color }}
       >
         <h2 className="font-bold">{displayProduct.name}</h2>
