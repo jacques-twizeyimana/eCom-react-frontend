@@ -60,7 +60,7 @@ export default function ProductDetails(){
                             <span className="font-bold font-sans test-sm">In Stock</span>
                         </div>
                         <div className="text-left">
-                            <span className="text-light test-sm pr-3 text-gray-500 font-sans test-sm">Promotions::</span>
+                            <span className="text-light test-sm pr-3 text-gray-500 font-sans test-sm">Promotions:</span>
                             <span className="font-bold font-sans test-sm">Location:</span>
                         </div>
                     </div>
@@ -91,9 +91,20 @@ export default function ProductDetails(){
                 <div className="add-review">
                     <h2 className="text-md font-black text-center">Add a review</h2>
                     <div className="px-10 py-10 ">
-                        <div className="">
-                            <label htmlFor="message">Review</label>
+                        <label htmlFor="" className={"mb-2"}>Rate product</label>
+                        <div>
+                            <svg className={"inline mx-2"} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z" fill="rgba(241,196,14,1)"/></svg>
+                            <svg className={"inline mx-2"} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z" fill="rgba(241,196,14,1)"/></svg>
+                            <svg className={"inline mx-2"} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z" fill="rgba(241,196,14,1)"/></svg>
+                            <svg className={"inline mx-2"} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z" fill="rgba(241,196,14,1)"/></svg>
+                            <svg className={"inline mx-2"} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z" fill="rgba(241,196,14,1)"/></svg>
+                        </div>
+                        <div className="my-2">
+                            <label htmlFor="message" className={"mb-2"}>Leave us a review</label>
                             <textarea name="message" id="message" className={"p-4 rounded-md focus:border-blue-400 focus:outline-none  resize-none h-32 block w-full border border-gray-300"}></textarea>
+                        </div>
+                        <div className="my-4">
+                            <button className="px-7 py-3 bg-blue-600 text-gray-200 rounded-md">Send review</button>
                         </div>
                     </div>
                 </div>
