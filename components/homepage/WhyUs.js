@@ -8,19 +8,25 @@ export default function WhyUs() {
       id: 1,
       description:
         "Lorem ipsum dolor sit amet, ut consectetur adipiscing elit, sed ",
-      image: "./svgs/shoe.svg",
+      image: "./svgs/svg1.svg",
     },
     {
       id: 2,
       description:
         "Lorem ipsum dolor sit amet, ut consectetur adipiscing elit, sed ",
-      image: "./svgs/shoe.svg",
+      image: "./svgs/svg2.svg",
     },
     {
       id: 3,
       description:
         "Lorem ipsum dolor sit amet, ut consectetur adipiscing elit, sed ",
-      image: "./svgs/shoe.svg",
+      image: "./svgs/svg3.svg",
+    },
+    {
+      id: 4,
+      description:
+        "Lorem ipsum dolor sit amet, ut consectetur adipiscing elit, sed ",
+      image: "./svgs/svg4.svg",
     },
   ]);
   return (
@@ -28,17 +34,24 @@ export default function WhyUs() {
       <Title title="Why Shop With Us" centered></Title>
       <div
         className={
-          "p-16 flex justify-between flex-wrap mt-8 mb-16 " +
+          "py-16 flex justify-between flex-wrap mt-8 mb-16 text-white bg-black " +
           styles.WhyUs__content
         }
       >
-        {shopWithUsData.map((record) => (
+        {shopWithUsData.map((record, index) => (
           <div
-            className={styles.WhyUs__item + " text-center items-center"}
+            className={
+              index === 0
+                ? "text-center items-center p-10 " + styles.WhyUs__item
+                : "text-center items-center p-10 " +
+                  styles.WhyUs__item +
+                  " " +
+                  styles.WhyUs__item__borderLeft
+            }
             key={record.id}
           >
             <img src={record.image}></img>
-            <p>{record.description}</p>
+            <p className="text-sm">{record.description}</p>
           </div>
         ))}
       </div>

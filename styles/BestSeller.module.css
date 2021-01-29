@@ -1,0 +1,16 @@
+.bestSeller{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-gap: 3rem;
+    width: 76rem;
+    margin: 0 0 0 4rem;
+    height: 20rem;
+}
+.bestSellerDesc{
+
+    color: white;
+    padding: 1.6rem 2rem 3rem 2rem;
+    height: 9rem;
+}
+

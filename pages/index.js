@@ -5,10 +5,13 @@ import Navbar from "../components/homepage/Navbar";
 import Title from "../components/homepage/Title";
 import WhyUs from "../components/homepage/WhyUs";
 
+import BestSeller from "../components/homepage/BestSeller";
+
 import Footer from "../components/homepage/Footer";
 import Newsletter from "../components/homepage/Newsletter";
 import Stories from "../components/homepage/Stories";
 import Brands from "../components/homepage/Brands";
+
 import Electronics from "../components/homepage/Electronics";
 import Promotions from "../components/homepage/Promotions";
 export default function HomePage() {
@@ -22,13 +25,13 @@ export default function HomePage() {
         <Banner />
         <Navbar />
         <Home />
-        <Promotions></Promotions>
-        <Electronics></Electronics>
+        <BestSeller />
+        <Promotions />
+        <Electronics />
         <Brands />
-        <WhyUs></WhyUs>
+        <WhyUs />
         <Title title=" Our Satsfied Customers Says" centered></Title>
         <Stories />
-
         <Newsletter />
         <Footer />
       </div>
