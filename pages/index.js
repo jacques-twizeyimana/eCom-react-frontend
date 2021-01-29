@@ -32,7 +32,7 @@ export default function HomePage() {
           <button>Child btn</button>
         </Title>
         <Title title="What Our Customers Say" centered></Title> */}
-        <Title title="Top Brands"></Title>
+       
         <Promotions></Promotions>
         <Electronics></Electronics>
         <Brands />
