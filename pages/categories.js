@@ -7,13 +7,13 @@ import Navbar from "../components/homepage/Navbar";
 
 export default function categories() {
   return (
-    <div className={"m-0 p-0 container-fluid"}>
-      <Banner></Banner>
-      <Navbar></Navbar>
-      <CategoriesHero></CategoriesHero>
-      <RecommendedProducts></RecommendedProducts>
-      <Brands></Brands>
-      <Footer></Footer>
+    <div className={"ms-0 p-0 container-fluid"}>
+      <Banner />
+      <Navbar />
+      <CategoriesHero />
+      <RecommendedProducts />
+      <Brands />
+      <Footer />
     </div>
   );
 }
