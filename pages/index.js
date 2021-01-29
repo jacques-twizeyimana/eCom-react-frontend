@@ -8,6 +8,7 @@ import WhyUs from "../components/homepage/WhyUs";
 import BestSeller from '../components/homepage/BestSeller'
 import HomeAppliances from '../components/homepage/HomeAppliances'
 
+
 import Footer from "../components/homepage/Footer";
 import Newsletter from "../components/homepage/Newsletter";
 import Stories from "../components/homepage/Stories";
