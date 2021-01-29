@@ -1,20 +1,20 @@
 @font-face { 
   font-family: "Montserrat";
-  src: url('/assets/fonts/Montserrat/Montserrat-Regular.ttf');
+  src: url('../public/assets/fonts/Montserrat/Montserrat-Regular.ttf');
 }
 @font-face { 
   font-family: "MontserratLight";
-  src: url('/assets/fonts/Montserrat/Montserrat-Thin.ttf');
+  src: url('../public/assets/fonts/Montserrat/Montserrat-Thin.ttf');
 }
 
 @font-face { 
   font-family: "MontserratBold";
-  src:url('/assets/fonts/Montserrat/Montserrat-Black.ttf');
+  src:url('../public/assets/fonts/Montserrat/Montserrat-Black.ttf');
 }
 
 @font-face { 
   font-family: "edosz";
-  src: url('/assets/fonts/edo_sz/edosz.ttf');
+  src: url('../public/assets/fonts/edo_sz/edosz.ttf');
 }
 
 *{
@@ -32,4 +32,9 @@ html,body{
 }
 .font-mo-bold{
   font-family: "MontserratBold", sans-serif;
+}
+@media screen and(width: 1024px){
+  .ipad-pro-hidden{
+    display: none !important;
+  }
 }

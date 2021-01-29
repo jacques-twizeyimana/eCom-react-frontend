@@ -12,6 +12,8 @@ import Newsletter from "../components/homepage/Newsletter";
 import Stories from "../components/homepage/Stories";
 import Brands from "../components/homepage/Brands";
 
+import Electronics from "../components/homepage/Electronics";
+import Promotions from "../components/homepage/Promotions";
 export default function HomePage() {
   return (
     <div>
@@ -31,6 +33,8 @@ export default function HomePage() {
         </Title>
         <Title title="What Our Customers Say" centered></Title> */}
         <Title title="Top Brands"></Title>
+        <Promotions></Promotions>
+        <Electronics></Electronics>
         <Brands />
         <WhyUs></WhyUs>
         <Title title=" Our Satsfied Customers Says" centered></Title>
