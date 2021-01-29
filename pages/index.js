@@ -25,21 +25,15 @@ export default function HomePage() {
         <Banner />
         <Navbar />
         <Home />
-        
-        <Title title="The Bestsellers"></Title>
         <BestSeller/>
-        {/* <Title title="Promotions">
-          <button>Child btn</button>
-        </Title>
-        <Title title="What Our Customers Say" centered></Title> */}
-       
         <Promotions></Promotions>
         <Electronics></Electronics>
+        <Promotions />
+        <Electronics />
         <Brands />
-        <WhyUs></WhyUs>
+        <WhyUs />
         <Title title=" Our Satsfied Customers Says" centered></Title>
         <Stories />
-
         <Newsletter />
         <Footer />
       </div>

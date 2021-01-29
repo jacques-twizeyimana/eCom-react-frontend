@@ -1,4 +1,5 @@
 import styles from "../../styles/BestSeller.module.css";
+import Title from '../../components/homepage/Title'
 import {useState,useEffect} from 'react'
 import { average } from "color.js";
 export default function BestSeller() {
@@ -23,6 +24,8 @@ export default function BestSeller() {
  
   }, [images])
   return (
+    <div>
+    <Title title="The Bestsellers"></Title>
     <div className={styles.bestSeller}>
       <div >
         <img src="/img/kfc.jpg" alt="kfc" />
@@ -69,6 +72,7 @@ export default function BestSeller() {
         </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }
