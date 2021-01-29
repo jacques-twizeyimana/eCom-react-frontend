@@ -38,9 +38,16 @@ export default function WhyUs() {
           styles.WhyUs__content
         }
       >
-        {shopWithUsData.map((record) => (
+        {shopWithUsData.map((record, index) => (
           <div
-            className={styles.WhyUs__item + " text-center items-center p-10"}
+            className={
+              index === 0
+                ? "text-center items-center p-10 " + styles.WhyUs__item
+                : "text-center items-center p-10 " +
+                  styles.WhyUs__item +
+                  " " +
+                  styles.WhyUs__item__borderLeft
+            }
             key={record.id}
           >
             <img src={record.image}></img>
