@@ -21,7 +21,7 @@ export default function AboutUs (){
             <h1 className="font-black text-center text-4xl">About Us</h1>
             <h2 className="font-light text-lg text-gray-400 mt-4 text-center">Home &rarr; About Us</h2>
         </div>
-        <div className="bg-white px-5 py-8 md:px-12 md:py-16 lg:px-16 lg:py-20 border-b border-gray-200">
+        <div className="bg-white px-5 pt-8 md:px-12 md:py-16 lg:px-16 lg:py-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
                 <div className={""}>
                     <img src="/img/about-us/about-us-girl-with-laptop.jfif" alt="Girl with laptop" className={"block w-full max-h-96"}/>
@@ -64,8 +64,8 @@ export default function AboutUs (){
             </div>
         </div>
         <WhyUs />
-        {/*<Stories />*/}
-        {/*<Newsletter />*/}
+        <Stories />
+        <Newsletter />
         <Footer />
 
     </div>

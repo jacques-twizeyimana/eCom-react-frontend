@@ -1,5 +1,5 @@
 import { average } from "color.js";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Product({ product = {} }) {
   const [displayProduct, setdisplayProduct] = useState(product);

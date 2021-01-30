@@ -1,0 +1,12 @@
+.home {
+  background: rgba(0, 0, 0, 0.7);
+  background-image: url("/img/categories/mac3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.spanActive {
+  color: #ea1515;
+  font-size: 1.5rem;
+}

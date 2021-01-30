@@ -1,8 +1,8 @@
 export default function ProductDetails(){
     return (
         <div className={"container-fluid p-0 m-0 "}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 pr-20">
-                <div className="bg-gray-300 py-8 pl-1 pr-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 px-3 sm:px-5 md:px-0 md:pr-12 lg:pr-20">
+                <div className="bg-gray-300 py-8 pl-1 md:pr-12">
                     <div className="grid grid-cols-5">
                         <div className="view-product-images border-b border-t border-gray-400">
                             <div className="px-0 py-1 border border-gray-300 hover:border-gray-400">
@@ -20,7 +20,7 @@ export default function ProductDetails(){
                         </div>
                     </div>
                 </div>
-                <div className="details pl-20 py-7 pr-4">
+                <div className="details sm:pl-4 md:pl-8 lg:pl-20 py-7 pr-4">
                     <h2 className="font-bold text-2xl">Common Achilles Sneakers</h2>
                     <div className="desc my-10">
                         <p className="font-light test-sm text-gray-600">Seamlessly empower fully researched growth strategy and interoperable internal. It was found in the 2016 through its leather innovations.</p>
@@ -49,11 +49,11 @@ export default function ProductDetails(){
                     <div className="category-- my-12 grid grid-cols-2">
                         <div className="text-left">
                             <span className="text-light test-sm pr-3 text-gray-500 font-sans test-sm">Category:</span>
-                            <span className="font-bold font-sans test-sm">Shoes</span>
+                            <span className="font-bold font-sans test-sm truncate">Shoes</span>
                         </div>
                         <div className="text-left">
                             <span className="text-light test-sm pr-3 text-gray-500 font-sans test-sm">Location:</span>
-                            <span className="font-bold font-sans test-sm">Rwanda</span>
+                            <span className="font-bold font-sans test-sm truncate">Rwanda</span>
                         </div>
                         <div className="text-left">
                             <span className="text-light font-sans test-sm pr-3 text-gray-500 test-sm">Availability:</span>
@@ -104,7 +104,7 @@ export default function ProductDetails(){
                             <textarea name="message" id="message" className={"p-4 rounded-md focus:border-blue-400 focus:outline-none  resize-none h-32 block w-full border border-gray-300"}></textarea>
                         </div>
                         <div className="my-4">
-                            <button className="px-7 py-3 bg-blue-600 text-gray-200 rounded-md">Send review</button>
+                            <button className="px-7 py-3 bg-blue-600 text-gray-200 rounded-md focus:outline-none">Send review</button>
                         </div>
                     </div>
                 </div>
