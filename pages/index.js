@@ -7,6 +7,8 @@ import WhyUs from "../components/homepage/WhyUs";
 
 import BestSeller from '../components/homepage/BestSeller'
 import HomeAppliances from '../components/homepage/HomeAppliances'
+import NewProducts from '../components/homepage/NewProducts'
+import ShopByCategory from '../components/homepage/ShopByCategory'
 
 
 import Footer from "../components/homepage/Footer";
@@ -29,7 +31,9 @@ export default function HomePage() {
         <Home />
         <BestSeller/>
         <Promotions />
+        <NewProducts />
         <HomeAppliances/>
+        <ShopByCategory />
         <Electronics />
         <Brands />
         <WhyUs />
