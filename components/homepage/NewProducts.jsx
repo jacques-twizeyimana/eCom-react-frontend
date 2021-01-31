@@ -104,7 +104,7 @@ export default function NewProducts() {
                 </div>
               )) || (
                 <div className="text-center h-28">
-                  <h1>{product.name}</h1>
+                  <h1 className="font-black">{product.name}</h1>
                   <div className="ml-20">
                     <ReactStars
                       count={5}
