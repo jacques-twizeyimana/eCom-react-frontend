@@ -28,12 +28,12 @@ export default function HomePage() {
         <Navbar />
         <Home />
         <BestSeller/>
-        <Promotions></Promotions>
+        <Promotions />
         <HomeAppliances/>
         <Electronics />
         <Brands />
         <WhyUs />
-        <Title title=" Our Satsfied Customers Says" centered></Title>
+        <Title title=" Our Satisfied Customers Says" centered></Title>
         <Stories />
         <Newsletter />
         <Footer />

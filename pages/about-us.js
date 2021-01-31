@@ -24,7 +24,7 @@ export default function AboutUs (){
         <div className="bg-white px-5 pt-8 md:px-12 md:py-16 lg:px-16 lg:py-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
                 <div className={""}>
-                    <img src="/img/about-us/about-us-girl-with-laptop.jfif" alt="Girl with laptop" className={"block w-full max-h-96"}/>
+                    <img loading={"lazy"} src="/img/about-us/about-us-girl-with-laptop.jfif" alt="Girl with laptop" className={"block w-full max-h-96"}/>
                 </div>
                 <div className="px-5 py-8 md:px-16 md:py-10 lg:px-20 lg:py-12">
                     <h2 className="font-bold font-sans text-left text-3xl">Globally connected by large network</h2>
@@ -43,22 +43,22 @@ export default function AboutUs (){
             <div className={"py-8 px-5"}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                     <div  className={" mt-auto"}>
-                        <img src="/img/about-us/aboutus-gallery-shoe.jfif" alt="Shoes we sell" className="block w-full"/>
+                        <img loading={"lazy"} src="/img/about-us/aboutus-gallery-shoe.jfif" alt="Shoes we sell" className="block w-full"/>
                     </div>
                     <div className={" my-auto"}>
-                        <img src="/img/about-us/aboutus-gallery-perfume.jfif" alt="Shoes we sell" className="block w-full"/>
+                        <img loading={"lazy"} src="/img/about-us/aboutus-gallery-perfume.jfif" alt="Shoes we sell" className="block w-full"/>
                     </div>
                     <div  className={" mt-auto"}>
-                        <img src="/img/about-us/aboutus-gallery-ipadpro.jfif" alt="Shoes we sell" className="block w-full"/>
+                        <img loading={"lazy"} src="/img/about-us/aboutus-gallery-ipadpro.jfif" alt="Shoes we sell" className="block w-full"/>
                     </div>
                     <div  className={" mx-auto"}>
-                        <img src="/img/about-us/laptop.jfif" alt="Shoes we sell" className="block w-full"/>
+                        <img loading={"lazy"} src="/img/about-us/laptop.jfif" alt="Shoes we sell" className="block w-full"/>
                     </div>
                     <div className={" mt-auto"}>
-                        <img src="/img/about-us/bag.jfif" alt="Shoes we sell" className="block w-full"/>
+                        <img loading={"lazy"} src="/img/about-us/bag.jfif" alt="Shoes we sell" className="block w-full"/>
                     </div>
                     <div  className={" mb-auto"}>
-                        <img src="/img/about-us/womens-bag.jfif" alt="Shoes we sell" className="block w-full"/>
+                        <img loading={"lazy"} src="/img/about-us/womens-bag.jfif" alt="Shoes we sell" className="block w-full"/>
                     </div>
                 </div>
             </div>
