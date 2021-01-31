@@ -74,19 +74,13 @@ export default function NewProducts() {
                 {inHover === product.id && (
                   <div className="absolute">
                     <div className="bg-img h-8 w-9 my-4 bg-gray-100">
-                      <img
-                        src="/img/newProducts/icons8_eye_26px 2.png"
-                        alt=""
-                        className="ml-1.5"
-                      />
-                    </div>
-                    <div className="bg-img h-8 w-9 my-4 bg-gray-100">
-                      <img
+                    <img
                         src="/img/newProducts/icons8_heart_26px 3.png"
                         alt=""
                         className="ml-1.5"
                       />
                     </div>
+                  
                   </div>
                 )}
 
