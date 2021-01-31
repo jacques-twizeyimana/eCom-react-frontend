@@ -7,29 +7,29 @@ export default function NewProducts() {
     console.log(newRating);
   };
   const [inHover, setHover] = useState(null);
-  const [newProducts, setNewProducts] = useState([
+  const [byCategoryProducts, setbyCategoryProducts] = useState([
     {
       id: 1,
-      image: "/img/newProducts/shoes1.png",
-      name: "Nike Air Max ",
+      image: "/img/shopByCategory/category1.png",
+      name: "Gucci ACE SNEAKERS ",
       price: "150.00",
     },
     {
       id: 2,
-      image: "/img/newProducts/shoes2.png",
-      name: "Nike Air Max ",
+      image: "/img/shopByCategory/category2.png",
+      name: "Gucci ACE SNEAKERS ",
       price: "150.00",
     },
     {
       id: 3,
-      image: "/img/newProducts/shoes3.png",
-      name: "Nike Air Max ",
+      image: "/img/shopByCategory/category3.png",
+      name: "Gucci ACE SNEAKERS ",
       price: "150.00",
     },
     {
       id: 4,
-      image: "/img/newProducts/shoes4.png",
-      name: "Nike Air Max ",
+      image: "/img/shopByCategory/category4.png",
+      name: "Gucci ACE SNEAKERS ",
       price: "150.00",
     },
   ]);
@@ -37,22 +37,22 @@ export default function NewProducts() {
   return (
     <div>
       <div className="inline-flex">
-        <Title title="New Products"></Title>
+        <Title title="Shop By Category"></Title>
         <div
           className={"flex  h-12  rounded border border-black " + styles.filter}
         >
           <span className="mt-1 ">Filter : </span>
           <select className="font-black pl-6">
-            <option>Shoes</option>
-            <option>Shoes</option>
-            <option>Shoes</option>
-            <option>Shoes</option>
+            <option>Food</option>
+            <option>Food</option>
+            <option>Food</option>
+            <option>Food</option>
           </select>
         </div>
       </div>
 
       <div className="grid grid-cols-4 auto-rows-auto gap-12 w-11/12 ml-6  ">
-        {newProducts.map((product) => {
+        {byCategoryProducts.map((product) => {
           return (
             <div
               key={product.id}
@@ -91,7 +91,7 @@ export default function NewProducts() {
                 )}
 
               </div>
-              <img src={product.image} className="w-3/4"/>
+              <img src={product.image} className="h-72" />
 
               {(inHover === product.id && (
                 <div className="  flex h-28 items-end  ">
