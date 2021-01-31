@@ -91,7 +91,7 @@ export default function NewProducts() {
                 )}
 
               </div>
-              <img src={product.image} />
+              <img src={product.image} className="h-72" />
 
               {(inHover === product.id && (
                 <div className="  flex h-28 items-end  ">
