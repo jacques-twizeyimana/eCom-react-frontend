@@ -13,7 +13,6 @@ import Footer from "../components/homepage/Footer";
 import Newsletter from "../components/homepage/Newsletter";
 import Stories from "../components/homepage/Stories";
 import Brands from "../components/homepage/Brands";
-import Dropdown from "../components/homepage/Dropdown";
 import Electronics from "../components/homepage/Electronics";
 import Promotions from "../components/homepage/Promotions";
 export default function HomePage() {
@@ -36,7 +35,7 @@ export default function HomePage() {
         <Title title=" Our Satsfied Customers Says" centered></Title>
         <Stories />
         <Newsletter />
-     <Dropdown/>
+  
         <Footer />
       </div>
     </div>
