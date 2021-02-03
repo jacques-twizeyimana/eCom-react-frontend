@@ -6,7 +6,7 @@ export default function Newsletter() {
       </h1>
       <div className="flex justify-center">
         <input
-          className="p-3 border-2 border-black h-20 w-2/6"
+          className="p-3 border-2 border-black h-16 w-2/6 focus:rounded-none"
           type="email"
           placeholder="ENTER YOUR EMAIL HERE"
         />

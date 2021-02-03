@@ -13,18 +13,19 @@ export default function BestSeller() {
 
   useEffect(() => {
     async function getAverageColor(){
-     
+     let tempColors = []
       for (let i = 0; i < images.length; i++) {
-        colors.push(await average(images[i], {format: "hex"}))
+      tempColors.push(await average(images[i], {format: "hex"}))
       }
-      console.log(colors)
-      setColor(colors);
+      console.log(tempColors)
+      setColor(tempColors);
     }
     getAverageColor();
  
   }, [images])
   return (
     <div>
+
     <Title title="The Bestsellers"></Title>
     <div className={styles.bestSeller}>
       <div >

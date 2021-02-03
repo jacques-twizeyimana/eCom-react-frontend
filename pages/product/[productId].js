@@ -15,7 +15,7 @@ export default function ProductDetailsPage(){
             <Banner />
             <Navbar />
             <ProductDetails />
-            {/*<Footer />*/}
+            <Footer />
           </div>
         </div>
     )
