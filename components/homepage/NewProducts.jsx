@@ -36,7 +36,7 @@ export default function NewProducts() {
 
   return (
     <div>
-      <div className="inline-flex">
+      <div className="lg:inline-flex">
         <Title title="New Products"></Title>
         <div
           className={"flex  h-12  rounded border border-black " + styles.filter}
@@ -74,18 +74,16 @@ export default function NewProducts() {
                 {inHover === product.id && (
                   <div className="absolute">
                     <div className="bg-img h-8 w-9 my-4 bg-gray-100">
-                    <img
+                      <img
                         src="/img/newProducts/icons8_heart_26px 3.png"
                         alt=""
                         className="ml-1.5"
                       />
                     </div>
-                  
                   </div>
                 )}
-
               </div>
-              <img src={product.image} className="w-3/4"/>
+              <img src={product.image} className="w-3/4" />
 
               {(inHover === product.id && (
                 <div className="  flex h-28 items-end  ">

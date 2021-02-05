@@ -35,20 +35,20 @@ export default function Promotions() {
   ];
 
   return (
-    <div className="mx-16">
+    <div className="lg:mx-16">
       <Title title="Promotions"></Title>
-      <div className="flex">
-        <div className="w-1/2 relative">
+      <div className="lg:flex">
+        <div className="w-full lg:w-1/2 relative">
           <img src={image} className="w-full h-full"></img>
           <button
             style={{ backgroundColor: color }}
-            className="text-black font-bold rounded h-10 w-32 absolute bottom-0 right-20"
+            className="text-black font-bold rounded h-10 w-32 absolute bottom-0 right-0 lg:right-20"
           >
             Shop now
           </button>
         </div>
         <div
-          className="w-1/2 text-center p-10"
+          className="w-full lg:w-1/2 text-center p-10"
           style={{ backgroundColor: color }}
         >
           <Swiper
@@ -57,7 +57,7 @@ export default function Promotions() {
             pagination={{ clickable: true }}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
-            className="min-h-full"
+            className="h-80 lg:h-full lg:min-h-full"
           >
             {slides.map((slide) => (
               <SwiperSlide key={slide.id}>
@@ -70,7 +70,7 @@ export default function Promotions() {
                   <p className="text-gray-400 mt-2">25% off</p>
                 </div>
 
-                <div className="timer flex justify-center">
+                <div className="timer flex justify-center mt-10">
                   {date.map((row) => (
                     <div key={row.key} className="flex m-auto">
                       <p className="font-black text-xl ml-2">{row.value}</p>

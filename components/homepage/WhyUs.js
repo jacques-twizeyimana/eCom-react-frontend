@@ -42,8 +42,9 @@ export default function WhyUs() {
           <div
             className={
               index === 0
-                ? "text-center items-center p-10 " + styles.WhyUs__item
-                : "text-center items-center p-10 " +
+                ? "text-center items-center p-10 w-full lg:w-1/4 " +
+                  styles.WhyUs__item
+                : "text-center items-center p-10 w-full lg:w-1/4 " +
                   styles.WhyUs__item +
                   " " +
                   styles.WhyUs__item__borderLeft

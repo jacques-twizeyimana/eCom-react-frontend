@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Titlestyles from "../../styles/Title.module.css";
 
-export default function Title({ title, centered, children }) {
+export default function Title({ title, centered, children, margin = true }) {
   const [underlineWidth, setunderlineWidth] = useState(0);
   const styles = { fontSize: "32px" };
   const getTextWidth = (inputText) => {

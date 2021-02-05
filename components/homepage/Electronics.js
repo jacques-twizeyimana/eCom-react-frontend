@@ -28,15 +28,13 @@ export default function Electronics() {
   ];
 
   return (
-    <div className="mx-16">
+    <div className="lg:mx-16">
       <Title title="Electronics"></Title>
-      <div className={"m-10 flex items-center h-96 bg-black"}>
-        <div className="flex-1 h-full w-1/2">
+      <div className="lg:m-10 flex flex-wrap items-center lg:h-96 bg-black">
+        <div className="flex-1 h-full w-full lg:w-1/2">
           <Swiper
             slidesPerView={1}
             pagination={{ clickable: true }}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
             className="w-full"
           >
             {slides.map((slide) => (
@@ -46,7 +44,7 @@ export default function Electronics() {
             ))}
           </Swiper>
         </div>
-        <div className="my-10 px-20 text-white p-5 w-1/2 h-full flex flex-col justify-center">
+        <div className="lg:my-10 px-20 text-white p-5 w-full lg:w-1/2 h-full flex flex-col bg-black justify-center">
           <h1 className="font-weight-bold mb-10 text-2xl font-bold">
             Technology Related
           </h1>
