@@ -36,7 +36,7 @@ export default function NewProducts() {
 
   return (
     <div>
-      <div className="lg:inline-flex">
+      <div className="lg:flex lg:justify-center lg:items-center lg:mr-14">
         <Title title="Shop By Category"></Title>
         <div
           className={"flex  h-12  rounded border border-black " + styles.filter}
