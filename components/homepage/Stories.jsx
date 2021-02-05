@@ -26,7 +26,7 @@ export default function Stories() {
           >
 {slides.map((slide) => (
               <SwiperSlide key={slide.id}>
-              <div className=" m-20   p-2">
+              <div className=" m-20  p-2">
         <div className=" w-1/3  ml-20 flex relative ">
           <img
             src="/img/avatar.png"
