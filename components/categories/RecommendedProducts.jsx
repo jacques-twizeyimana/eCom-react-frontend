@@ -33,7 +33,7 @@ export default function RecommendedProducts() {
   return (
     <div className="mx-4">
       <Title title="Recommended Products"></Title>
-      <div className="products__list my-10 flex justify-between">
+      <div className="products__list my-10 flex flex-wrap justify-between">
         {initialProducts.map((product) => (
           <Product key={product.id} product={product}></Product>
         ))}

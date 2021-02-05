@@ -15,9 +15,9 @@ export default function Product({ product = {} }) {
     }
   }, [product]);
   return (
-    <div className="product w-1/4 mr-2">
+    <div className="product w-full md:w-1/2 lg:w-1/4 mt-2">
       <div className="product__content w-full h-80">
-        <img src={displayProduct.image} className="h-full"></img>
+        <img src={displayProduct.image} className="h-full w-full"></img>
       </div>
       <div
         className="product__info text-white p-6 text-center cursor-pointer"
