@@ -30,6 +30,7 @@ export default function RecommendedProducts() {
       color: "#650D03",
     },
   ];
+
   return (
     <div className="mx-4">
       <Title title="Recommended Products"></Title>

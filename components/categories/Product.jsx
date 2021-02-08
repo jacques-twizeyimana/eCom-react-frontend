@@ -3,6 +3,17 @@ import { useEffect, useState } from "react";
 
 export default function Product({ product = {} }) {
   const [displayProduct, setdisplayProduct] = useState(product);
+  const [selected, setselected] = useState(false);
+
+  const hoverImages = [
+    { id: 1, image: "./svgs/eye.svg" },
+    { id: 2, image: "./svgs/heart.svg" },
+    { id: 3, image: "./svgs/cart.svg" },
+  ];
+
+  const changeSelected = (newState) => {
+    setselected(newState);
+  };
   useEffect(() => {
     async function getDisplayProduct() {
       setdisplayProduct({
@@ -14,17 +25,51 @@ export default function Product({ product = {} }) {
       getDisplayProduct();
     }
   }, [product]);
+
+  const productStyles = selected
+    ? {
+        fill: "rgba(0, 0, 0, 0.8)",
+      }
+    : {};
   return (
-    <div className="product w-full md:w-1/2 lg:w-1/4 mt-2">
-      <div className="product__content w-full h-80">
+    <div
+      className="product w-full md:w-1/2 lg:w-1/4 mt-2"
+      onMouseEnter={() => changeSelected(true)}
+      onMouseLeave={() => changeSelected(false)}
+    >
+      <div
+        className="product__content flex justify-center items-center w-full h-80 relative"
+        style={productStyles}
+      >
         <img src={displayProduct.image} className="h-full w-full"></img>
+        {selected && (
+          <div className="absolute flex flex-col items-center">
+            <h1 className="font-bold text-white">{displayProduct.name}</h1>
+            <p className="text-white">${displayProduct.price}</p>
+          </div>
+        )}
       </div>
       <div
         className="product__info text-white p-6 text-center cursor-pointer"
-        style={{ backgroundColor: displayProduct.color }}
+        style={{ backgroundColor: displayProduct.color, minHeight: "6rem" }}
       >
-        <h2 className="font-bold">{displayProduct.name}</h2>
-        <p>Preview</p>
+        {!selected ? (
+          <>
+            <h2 className="font-bold">{displayProduct.name}</h2>
+            <p>Preview</p>{" "}
+          </>
+        ) : (
+          <div className="flex justify-center">
+            {hoverImages.map((image) => (
+              <img
+                src={image.image}
+                key={image.id}
+                alt="Icon"
+                className="mr-4"
+              ></img>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
