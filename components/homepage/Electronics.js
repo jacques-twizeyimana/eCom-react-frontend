@@ -44,7 +44,7 @@ export default function Electronics() {
             ))}
           </Swiper>
         </div>
-        <div className="lg:my-10 px-20 text-white p-5 w-full lg:w-1/2 h-full flex flex-col bg-black justify-center">
+        <div className="px-20 text-white p-5 w-full lg:w-1/2 h-full flex flex-col bg-black justify-center">
           <h1 className="font-weight-bold mb-10 text-2xl font-bold">
             Technology Related
           </h1>
