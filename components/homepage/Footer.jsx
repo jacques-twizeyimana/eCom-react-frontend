@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <div>
       <div className=" flex justify-center " style={{ marginBottom: "-30px" }}>
-        <div className=" flex justify-center bg-gray-100 h-16 w-16 p-4  rounded-full ">
+        <a href='#top' className=" flex justify-center bg-gray-100 h-16 w-16 p-4  rounded-full ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -12,12 +12,12 @@ export default function Footer() {
             <path fill="none" d="M0 0h24v24H0z" />
             <path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z" />
           </svg>
-        </div>
+        </a>
       </div>
 
-      <div className="bg-gray-100 h-96">
-        <div className="flex h-5/6 ">
-          <div className=" w-2/6 ">
+      <div className="bg-gray-100 h-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 h-5/6  sm:grid-cols-2">
+          <div className="  ">
             <div className="m-16">
               <p className="text-3xl text-black font-bold italic px-3 hidden md:inline-block font-edo">
                 E-SHOP
@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="w-1/5">
+          <div className="">
             <div className="m-16">
               <h1 className="font-bold">MENU</h1>
               <ul className="list-none mt-4" style={{ fontSize: "15px" }}>
@@ -57,7 +57,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className=" w-2/6">
+          <div className=" ">
             <div className="m-16">
               <h1 className="font-bold">HELP</h1>
               <ul className="list-none mt-4 " style={{ fontSize: "15px" }}>
@@ -82,7 +82,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="w-2/6">
+          <div className="">
             <div className="mt-14">
               <h1 className="font-bold text-center">HAVE A QUESTION ?</h1>
               <div className="ml-12 mt-4 " style={{ fontSize: "15px" }}>

@@ -22,10 +22,10 @@ export default function Stories() {
             pagination={{ clickable: true }}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
-            className="grid grid-cols-2"
+            className="grid grid-cols-2 "
           >
 {slides.map((slide) => (
-              <SwiperSlide key={slide.id}>
+              <SwiperSlide className="" key={slide.id}>
               <div className=" m-20  p-2">
         <div className=" w-1/3  ml-20 flex relative ">
           <img
