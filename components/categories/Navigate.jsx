@@ -34,7 +34,7 @@ export default function Navigate() {
 
 
     return (
-        <div>
+        <div id="top">
         <div className="flex mt-8">
          <div className="w-1/4">
          <div>
