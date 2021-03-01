@@ -56,7 +56,7 @@ export default function NewProducts() {
           return (
             <div
               key={product.id}
-              className="bg-white shadow-2xl relative "
+              className={"bg-white relative "+styles.shopByCategory}
               onMouseOver={() => setHover(product.id)}
               onMouseLeave={() => setHover(null)}
             >
@@ -103,6 +103,7 @@ export default function NewProducts() {
                       onChange={ratingChanged}
                       size={24}
                       activeColor="#ffd700"
+                      classNames={styles.stars}
                     />
                   </div>
                   <h2>{product.price}</h2>
