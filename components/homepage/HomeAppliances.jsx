@@ -1,5 +1,6 @@
 import ReactStars from "react-rating-stars-component";
 import Title from '../homepage/Title'
+import styles from "../../styles/BestSeller.module.css";
 
 export default function HomeAppliances() {
     const ratingChanged = (newRating) => {
@@ -8,7 +9,7 @@ export default function HomeAppliances() {
     return (
         <div>
             <Title title="Home Appliances"></Title>
-            <div className="grid grid-cols-4 auto-rows-auto gap-12 w-11/12 ml-16 h-5/6">
+            <div className={"grid grid-cols-4 auto-rows-auto gap-12 w-11/12 ml-16 h-5/6 "+styles.homeAppliance}>
                 <div className="bg-blue-50 text-center ">
                     <img src="/img/home-appliance1.png" alt="kfc"/>
                     <div className="pt-16 "

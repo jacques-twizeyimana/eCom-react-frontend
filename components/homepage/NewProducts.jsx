@@ -51,7 +51,7 @@ export default function NewProducts() {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 auto-rows-auto gap-12 w-11/12 ml-6  ">
+      <div className={"grid grid-cols-4 auto-rows-auto gap-12 w-11/12 ml-6 "+styles.newProducts}>
         {newProducts.map((product) => {
           return (
             <div
