@@ -3,7 +3,7 @@ import Navbar from "../components/homepage/Navbar";
 import Head from "next/head";
 import Banner from "../components/homepage/Banner";
 import Title from "../components/homepage/Title";
-import styles from '../styles/Aboutus.module.css'
+import styles from '../styles/Contact.module.css'
 
 export default function Contact(){
     return (
@@ -17,7 +17,7 @@ export default function Contact(){
         <Navbar />
         <div className={"container-fluid m-0 py-32 px-5 text-white " + styles.welcome}>
             <h1 className="font-black text-center text-4xl">Contact Us</h1>
-            {/* <h2 className="font-light text-lg text-gray-400 mt-4 text-center">Home &rarr; Contact Us</h2> */}
+            <h2 className="font-light text-lg text-gray-400 mt-4 text-center">Home &rarr; Contact Us</h2>
         </div>
 
         {/* <div className="bg-white px-5 pt-8 md:px-12 md:py-16 lg:px-16 lg:py-20">
