@@ -26,11 +26,6 @@ export default function Product({ product = {} }) {
     }
   }, [product]);
 
-  const productStyles = selected
-    ? {
-        fill: "rgba(0, 0, 0, 0.8)",
-      }
-    : {};
   return (
     <div
       className="product w-full md:w-1/2 lg:w-1/4 mt-2"
@@ -39,12 +34,11 @@ export default function Product({ product = {} }) {
     >
       <div
         className="product__content flex justify-center items-center w-full h-80 relative"
-        style={productStyles}
       >
         <img src={displayProduct.image} className="h-full w-full"></img>
         {selected && (
-          <div className="absolute flex flex-col items-center">
-            <h1 className="font-bold text-white">{displayProduct.name}</h1>
+          <div className="absolute flex flex-col items-center" style={{backgroundColor: "rgba(0, 0, 0, 0.8)", height:"100%", width:"100%"}}>
+            <h1 className="font-bold text-white" style={{marginTop: "50%"}}>{displayProduct.name}</h1>
             <p className="text-white">${displayProduct.price}</p>
           </div>
         )}
