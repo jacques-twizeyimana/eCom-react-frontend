@@ -1,7 +1,9 @@
 import {useState} from "react";
+import Modal  from 'react-modal';
 
 export default function Navbar() {
   const [active, setActive] = useState(false);
+  const [ModelIsOpen,setModelIsOpen]= useState(false);
   return (
       <div>
         <div className="w-full border-b border-gray-200 px-5 py-4">
@@ -80,7 +82,7 @@ export default function Navbar() {
               </div>
               <div className="hidden md:inline-block shopping-data">
                 <button className="focus:outline-none relative inline-block">
-                  <svg
+                  <svg  onClick={()=>setModelIsOpen(true)} 
                       className="inline"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -190,7 +192,7 @@ export default function Navbar() {
               <button className="py-1">Register</button>
             </li>
             <li className={"my-2"}>
-              <button className="py-1">Buy now</button>
+              <button className="py-1">Buy w</button>
             </li>
 
             <li className="my-2 md:my-auto">
@@ -215,7 +217,7 @@ export default function Navbar() {
               </sup>
             </li>
             <li className="my-2 md:my-auto">
-              <button className="focus:outline-none">
+              <button  className="focus:outline-none">
                 <svg
                     className="inline"
                     xmlns="http://www.w3.org/2000/svg"
@@ -232,11 +234,98 @@ export default function Navbar() {
                     className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-black rounded-full">
                   9
                 </span>
+        
                 </sup>
               </button>
             </li>
           </ul>
         </div>
+
+        <Modal className="bg-black flex justify-center h-screen bg-opacity-70 p-12"  style={{zIndex:999}} isOpen={ModelIsOpen}>
+            
+            <div className="bg-white w-1/2 relative p-2">
+            <div onClick={()=>setModelIsOpen(false)}  className=" absolute right-2 text-white text-center text-white rounded rounded-full w-6 h-6 bg-black">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 
+            1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+             fill="rgba(255,255,255,1)"/></svg>
+            </div>
+              <p className="font-bold text-center">My Wishlist </p>
+              <div className="flex justify-center p-2">
+              <svg className="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+               width="36" height="36"><path fill="none" d="M0 0H24V24H0z"/><path d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236
+               2.265-2.264 5.888-2.34 8.244-.228z" fill="rgba(244,48,48,1)"/></svg>
+          
+              </div>
+              <div className="grid grid-cols-3">
+              <div className="w-4/5">
+                <div className="bg-gray-200 h-36 w-full m-2 p-2">
+                  <img src="/img/products/grey-shoes.png" alt=""/>
+                </div>
+               <p className="font-bold text-center">Bacca Bucci</p>
+               <p className=" text-center p-1.5 text-gray-400 text-sm">Mens Sneakers</p>
+               <p className="font-bold text-center text-sm ">$100</p>
+
+               <div className=" w-3/4 bg-black m-4 rounded rounded-lg text-white text-center p-1">
+                 <p className="text-sm">Add to Cart</p>
+               </div>
+               <div className="flex justify-center">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                 <path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9.414l2.828-2.829 1.415 1.415L13.414 12l2.829
+                2.828-1.415 1.415L12 13.414l-2.828 2.829-1.415-1.415L10.586 12 7.757
+                 9.172l1.415-1.415L12 10.586z"/></svg>
+               </div>
+       
+              </div>
+              <div className="w-4/5">
+                <div className="bg-gray-200 h-36 w-full m-2 p-2">
+                  <img src="/img/products/grey-shoes.png" alt=""/>
+                </div>
+               <p className="font-bold text-center">Bacca Bucci</p>
+               <p className=" text-center p-1.5 text-gray-400 text-sm">Mens Sneakers</p>
+               <p className="font-bold text-center text-sm ">$100</p>
+
+               <div className=" w-3/4 bg-black m-4 rounded rounded-lg text-white text-center p-1">
+                 <p className="text-sm">Add to Cart</p>
+               </div>
+               <div className="flex justify-center">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                 <path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9.414l2.828-2.829 1.415 1.415L13.414 12l2.829
+                2.828-1.415 1.415L12 13.414l-2.828 2.829-1.415-1.415L10.586 12 7.757
+                 9.172l1.415-1.415L12 10.586z"/></svg>
+               </div>
+       
+              </div>
+              <div className="w-4/5">
+                <div className="bg-gray-200 h-36 w-full m-2 p-2">
+                  <img src="/img/products/grey-shoes.png" alt=""/>
+                </div>
+               <p className="font-bold text-center">Bacca Bucci</p>
+               <p className=" text-center p-1.5 text-gray-400 text-sm">Mens Sneakers</p>
+               <p className="font-bold text-center text-sm ">$100</p>
+
+               <div className=" w-3/4 bg-black m-4 rounded rounded-lg text-white text-center p-1">
+                 <p className="text-sm">Add to Cart</p>
+               </div>
+               <div className="flex justify-center">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                 <path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9.414l2.828-2.829 1.415 1.415L13.414 12l2.829
+                2.828-1.415 1.415L12 13.414l-2.828 2.829-1.415-1.415L10.586 12 7.757
+                 9.172l1.415-1.415L12 10.586z"/></svg>
+               </div>
+       
+              </div>
+           
+           
+            
+              </div>
+            
+
+            
+            </div>
+            
+            
+              
+            </Modal>
       </div>
   );
 }
