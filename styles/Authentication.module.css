@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalContent {
+  width: 80%;
+  height: 85%;
+  display: flex;
+  background-color: white;
+}
+
+.modalLeft {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+
+.modalRight {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+}
+
+.modalTitle {
+  font-family: "Montserrat";
+}
