@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/Authentication.module.css";
+import LoginForm from "./LoginForm";
 import RegisterForm from "./RegisterForm";
 
 export default function AuthenticationModel({
@@ -9,9 +10,24 @@ export default function AuthenticationModel({
   if (!isModalShown) {
     return <div className="d-none"></div>;
   }
+
+  const [register, setregister] = useState(true);
+  const changeRoute = () => {
+    setregister(!register);
+  };
   return (
     <div className={styles.modal}>
-      <RegisterForm closeModal={changeModalShown}></RegisterForm>
+      {register ? (
+        <RegisterForm
+          changeRoute={changeRoute}
+          closeModal={changeModalShown}
+        ></RegisterForm>
+      ) : (
+        <LoginForm
+          changeRoute={changeRoute}
+          closeModal={changeModalShown}
+        ></LoginForm>
+      )}
     </div>
   );
 }

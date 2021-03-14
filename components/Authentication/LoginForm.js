@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../styles/Authentication.module.css";
 
-export default function RegisterForm({ closeModal, changeRoute }) {
+export default function LoginForm({ closeModal, changeRoute }) {
   const icons = [
     { id: 1, path: "./svgs/facebook.svg" },
     { id: 2, path: "./svgs/google.svg" },
@@ -17,20 +17,20 @@ export default function RegisterForm({ closeModal, changeRoute }) {
       ></img>
       <div className={styles.modalLeft}>
         <h1 className={styles.modalTitle + " font-bold text-2xl"}>
-          Welcome to E-shop
+          Welcome Back
         </h1>
         <p className="text-sm my-4">Login for more privileges</p>
-        <p className="text-xs mt-2 mb-4">Don’t have an account?</p>
+        <p className="text-xs mt-2 mb-4">Already have an account?</p>
         <button
           style={{ outline: "none" }}
           onClick={changeRoute}
           className="rounded-full border-2 border-gray-50 border-solid px-6 py-2"
         >
-          Login
+          Register
         </button>
       </div>
       <div className={styles.modalRight + " p-4"}>
-        <h1 className={"font-bold text-2xl"}>Sign Up</h1>
+        <h1 className={"font-bold text-2xl"}>Sign In</h1>
         <p
           style={{
             color: "#838383",
@@ -39,7 +39,7 @@ export default function RegisterForm({ closeModal, changeRoute }) {
           }}
           className="my-2 text-base"
         >
-          or sign up with
+          or sign in with
         </p>
         <div className="flex flex-row mt-4">
           {icons.map((icon) => (
