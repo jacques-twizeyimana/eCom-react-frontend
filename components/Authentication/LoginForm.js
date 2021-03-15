@@ -12,8 +12,12 @@ export default function LoginForm({ closeModal, changeRoute }) {
       <img
         onClick={() => closeModal()}
         src="./svgs/close.svg"
-        style={{ width: "1rem", height: "1rem" }}
-        className="absolute top-0 right-0"
+        style={{
+          width: "1.5rem",
+          height: "1.5rem",
+          cursor: "pointer",
+        }}
+        className="absolute top-2 right-2"
       ></img>
       <div className={styles.modalLeft}>
         <h1 className={styles.modalTitle + " font-bold text-2xl"}>
