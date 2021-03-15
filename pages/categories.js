@@ -12,6 +12,7 @@ export default function categories() {
       id: 1,
       pages: ["Home", "Categories", "Men", "Gadgets"],
       title: "PRODUCT CATEGORIES",
+      image: "/img/categories/mac3.png",
     },
     {
       id: 2,

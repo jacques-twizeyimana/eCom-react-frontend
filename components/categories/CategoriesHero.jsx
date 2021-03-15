@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
 
 export default function CategoriesHero({ slides = [] }) {
+  const defaultImage = "/img/categories/mac3.png";
   const [activeSlide, setactiveSlide] = useState(0);
 
   const changeSlide = (newSlide) => {
@@ -23,6 +24,7 @@ export default function CategoriesHero({ slides = [] }) {
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
           <div
+            style={{ backgroundImage: `url(${slide.image || defaultImage})` }}
             className={
               styles.home +
               " h-screen w-full py-24 pl-20 flex flex-col justify-center"
