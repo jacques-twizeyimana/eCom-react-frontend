@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/Authentication.module.css";
 
 export default function LoginForm({ closeModal, changeRoute }) {
+  const [email, setemail] = useState("");
+  const [password, setpassword] = useState("");
+
+  const changeEmail = (e) => {
+    setemail(e.target.value);
+  };
+  const changePassword = (e) => {
+    setpassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Email: " + email + ", Password: " + password);
+  };
   const icons = [
     { id: 1, path: "./svgs/facebook.svg" },
     { id: 2, path: "./svgs/google.svg" },
@@ -55,9 +69,12 @@ export default function LoginForm({ closeModal, changeRoute }) {
         <form
           style={{ height: "50%", width: "50%" }}
           className={"mt-4 " + styles.form}
+          onSubmit={handleSubmit}
         >
           <div className={styles.inputGroup}>
             <input
+              value={email}
+              onChange={changeEmail}
               id="loginEmail"
               type="text"
               className={styles.inputText}
@@ -71,6 +88,8 @@ export default function LoginForm({ closeModal, changeRoute }) {
 
           <div className={styles.inputGroup}>
             <input
+              value={password}
+              onChange={changePassword}
               id="loginPassword"
               type="password"
               className={styles.inputText}
