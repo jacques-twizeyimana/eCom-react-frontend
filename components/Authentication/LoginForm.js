@@ -48,7 +48,12 @@ export default function LoginForm({ closeModal, changeRoute }) {
             </div>
           ))}
         </div>
-        <form style={{ height: "50%" }}></form>
+        <form style={{ height: "50%" }} className="mt-4">
+          <div className="relative">
+            <input type="text" className={styles.inputText} />
+            <span className={styles.floating_label}>Email</span>
+          </div>
+        </form>
       </div>
     </div>
   );

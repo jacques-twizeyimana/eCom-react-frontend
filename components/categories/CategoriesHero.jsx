@@ -2,13 +2,12 @@ import styles from "../../styles/Categories.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
 
-export default function CategoriesHero() {
+export default function CategoriesHero({ slides = [] }) {
   const [activeSlide, setactiveSlide] = useState(0);
 
   const changeSlide = (newSlide) => {
     setactiveSlide(newSlide);
   };
-  const slides = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
 
   function goToPage(numberPage) {
     const swiper = document.querySelector(".swiper-container").swiper;
@@ -18,7 +17,6 @@ export default function CategoriesHero() {
     <Swiper
       slidesPerView={1}
       onSlideChange={(swiper) => changeSlide(swiper.activeIndex)}
-      onSwiper={(swiper) => console.log(swiper)}
       className="relative"
       id="categoriesSwiper"
     >
@@ -30,12 +28,19 @@ export default function CategoriesHero() {
               " h-screen w-full py-24 pl-20 flex flex-col justify-center"
             }
           >
-            <h1 className="font-black text-4xl">PRODUCT CATEGORIES</h1>
-            <p className="breadboard text-white mt-4">
-              <span>Home &gt; </span>
-              <span>Categories &gt; </span>
-              <span>Men &gt; </span>
-              <span className={styles.spanActive}>Gadgets </span>
+            <h1 className="font-black text-4xl">
+              {slide.title || "PRODUCT CATEGORIES"}
+            </h1>
+            <p className="breadboard text-black mt-4">
+              {slide.pages &&
+                slide.pages.map((item, index) => {
+                  const last = slide.pages.length - 1 === index;
+                  return last ? (
+                    <span className={styles.spanActive}>{item}</span>
+                  ) : (
+                    <span key={index}>{item} &gt; </span>
+                  );
+                })}
             </p>
 
             <div className="absolute right-0 flex flex-col gap-2">
@@ -44,8 +49,9 @@ export default function CategoriesHero() {
                   index === activeSlide ? "text-white bg-black" : "";
                 return (
                   <button
+                    style={{ outline: "none" }}
                     className={
-                      "outline-none text-black border-2 border-white cursor-pointer text-center rounded-full w-8 h-8 hover:bg-black hover:text-white " +
+                      "text-black border-2 border-white cursor-pointer text-center rounded-full w-8 h-8 hover:bg-black hover:text-white " +
                       activeClasses
                     }
                     key={item.id}
