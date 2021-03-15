@@ -43,24 +43,28 @@ export default function CategoriesHero({ slides = [] }) {
                 })}
             </p>
 
-            <div className="absolute right-0 flex flex-col gap-2">
+            <div className="absolute right-0 flex flex-col gap-2 items-center">
               {slides.map((item, index) => {
                 const activeClasses =
                   index === activeSlide ? "text-white bg-black" : "";
                 return (
-                  <button
-                    style={{ outline: "none" }}
-                    className={
-                      "text-black border-2 border-white cursor-pointer text-center rounded-full w-8 h-8 hover:bg-black hover:text-white " +
-                      activeClasses
-                    }
-                    key={item.id}
-                    onClick={() => {
-                      goToPage(index);
-                    }}
-                  >
-                    {index + 1}
-                  </button>
+                  <div>
+                    {index === activeSlide && <span>&#8211;</span>}
+                    <button
+                      style={{ outline: "none" }}
+                      className={
+                        "text-black border-2 border-white cursor-pointer text-center rounded-full w-8 h-8 hover:bg-black hover:text-white " +
+                        activeClasses
+                      }
+                      key={item.id}
+                      onClick={() => {
+                        goToPage(index);
+                      }}
+                    >
+                      {index + 1}
+                    </button>
+                    {index === activeSlide && <span>&#8211;</span>}
+                  </div>
                 );
               })}
             </div>
