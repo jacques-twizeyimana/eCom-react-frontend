@@ -52,7 +52,68 @@ export default function RegisterForm({ closeModal, changeRoute }) {
             </div>
           ))}
         </div>
-        <form style={{ height: "50%" }}></form>
+
+        <form
+          style={{ height: "60%", width: "50%" }}
+          className={"mt-4 " + styles.form}
+        >
+          <div className={styles.inputGroup}>
+            <input
+              id="registerFullNames"
+              type="text"
+              className={styles.inputText}
+              required
+            />
+            <label
+              htmlFor="registerFullNames"
+              className={styles.floating_label}
+            >
+              <img src="./svgs/user-check.svg"></img>
+              <p>Full Names</p>
+            </label>
+          </div>
+
+          <div className={styles.inputGroup}>
+            <input
+              id="registerUsername"
+              type="text"
+              className={styles.inputText}
+              required
+            />
+            <label htmlFor="registerUsername" className={styles.floating_label}>
+              <img src="./svgs/username.svg"></img>
+              <p>Username</p>
+            </label>
+          </div>
+
+          <div className={styles.inputGroup}>
+            <input
+              id="registerEmail"
+              type="text"
+              className={styles.inputText}
+              required
+            />
+            <label htmlFor="registerEmail" className={styles.floating_label}>
+              <img src="./svgs/mail.svg"></img>
+              <p>Email</p>
+            </label>
+          </div>
+
+          <div className={styles.inputGroup}>
+            <input
+              id="registerPassword"
+              type="password"
+              className={styles.inputText}
+              required
+            />
+            <label htmlFor="registerPassword" className={styles.floating_label}>
+              <img src="./svgs/lock.svg"></img>
+              <p>Password</p>
+            </label>
+          </div>
+
+          <button className={styles.submitButton}>Register</button>
+        </form>
       </div>
     </div>
   );
