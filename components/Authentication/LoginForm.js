@@ -52,11 +52,38 @@ export default function LoginForm({ closeModal, changeRoute }) {
             </div>
           ))}
         </div>
-        <form style={{ height: "50%" }} className="mt-4">
-          <div className="relative">
-            <input type="text" className={styles.inputText} />
-            <span className={styles.floating_label}>Email</span>
+        <form
+          style={{ height: "50%", width: "50%" }}
+          className={"mt-4 " + styles.form}
+        >
+          <div className={styles.inputGroup}>
+            <input
+              id="loginEmail"
+              type="text"
+              className={styles.inputText}
+              required
+            />
+            <label htmlFor="loginEmail" className={styles.floating_label}>
+              <img src="./svgs/mail.svg"></img>
+              <p>Email</p>
+            </label>
           </div>
+
+          <div className={styles.inputGroup}>
+            <input
+              id="loginPassword"
+              type="password"
+              className={styles.inputText}
+              required
+            />
+            <label htmlFor="loginPassword" className={styles.floating_label}>
+              <img src="./svgs/lock.svg"></img>
+              <p>Password</p>
+            </label>
+          </div>
+
+          <button className={styles.submitButton}>Login</button>
+          <a className={styles.link}>Forgot Password ?</a>
         </form>
       </div>
     </div>
