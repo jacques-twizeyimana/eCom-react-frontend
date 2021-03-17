@@ -48,7 +48,7 @@ export default function ContactForm() {
 
             <div className={styles.inputContainer}>
                 <p>Enter Your Message</p>
-                <textarea onChange={handleMessage} value={message} type="text" rows="4"></textarea>
+                <textarea required onChange={handleMessage} value={message} type="text" rows="4"></textarea>
             </div>
 
             <button>Send Message</button>
