@@ -26,25 +26,26 @@ export default function Product({ product = {} }) {
     }
   }, [product]);
 
-  const productStyles = selected
-    ? {
-        fill: "rgba(0, 0, 0, 0.8)",
-      }
-    : {};
   return (
     <div
       className="product w-full md:w-1/2 lg:w-1/4 mt-2"
       onMouseEnter={() => changeSelected(true)}
       onMouseLeave={() => changeSelected(false)}
     >
-      <div
-        className="product__content flex justify-center items-center w-full h-80 relative"
-        style={productStyles}
-      >
+      <div className="product__content flex justify-center items-center w-full h-80 relative">
         <img src={displayProduct.image} className="h-full w-full"></img>
         {selected && (
-          <div className="absolute flex flex-col items-center">
-            <h1 className="font-bold text-white">{displayProduct.name}</h1>
+          <div
+            className="absolute flex flex-col items-center"
+            style={{
+              backgroundColor: "rgba(0, 0, 0, 0.8)",
+              height: "100%",
+              width: "100%",
+            }}
+          >
+            <h1 className="font-bold text-white" style={{ marginTop: "50%" }}>
+              {displayProduct.name}
+            </h1>
             <p className="text-white">${displayProduct.price}</p>
           </div>
         )}
@@ -59,12 +60,13 @@ export default function Product({ product = {} }) {
             <p>Preview</p>{" "}
           </>
         ) : (
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center">
             {hoverImages.map((image) => (
               <img
                 src={image.image}
                 key={image.id}
                 alt="Icon"
+                style={{ height: "1.5rem" }}
                 className="mr-4"
               ></img>
             ))}
