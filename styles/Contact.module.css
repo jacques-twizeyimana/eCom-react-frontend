@@ -6,3 +6,117 @@
     background-repeat: no-repeat;
   }
   
+  .contactSection {
+    padding: 5rem;
+  }
+
+  .contactSection > div {
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactSection .info {
+    padding: 2rem;
+  }
+
+  .contactSection .info > p {
+    color: #C1C1C1;
+    font-size: 12px;
+    margin-top: 1rem;
+  }
+
+  .contactSection .map {
+    background-image: url("../public/img/contact/map.jpg");
+    background-size: contain;
+  }
+
+  .inputContainer {
+    margin-top: 2.5rem;
+    position: relative;
+  }
+
+  .inputContainer input{
+    border-bottom: 2px solid #8B8B8B;
+    outline: none;
+  }
+
+  .inputContainer label {
+    position: absolute;
+    top: -0.3rem;
+    left: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #979797;
+    line-height: 25px;
+  }
+
+  .inputContainer p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #979797;
+    line-height: 25px;
+    margin-bottom: 0.5rem;
+  }
+
+  .contactForm {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactForm button{
+    background-color: #000000;
+    color: #fff;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 15px;
+    padding: 0.7rem 1.5rem;
+    outline: none;
+  }
+
+  .formGroup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  .inputContainer {
+    width: 70%;
+  }
+
+  .formGroup .inputContainer {
+    width: 30%;
+    margin: 0 5%;
+  }
+  
+  .inputContainer input {
+    /* padding: 0rem 0.5rem; */
+  }
+  .inputContainer input,.inputContainer label{
+    width: 100%;
+  }
+
+  .inputContainer input:focus, .inputContainer input:not(:focus):valid {
+    /* border: 2px solid #8B8B8B; */
+  }
+  .inputContainer input:focus ~ label, .inputContainer input:not(:focus):valid ~ label {
+    top: -1.3rem;
+  }
+  
+
+  .inputContainer textarea {
+    width: 100%;
+    border: 2px solid #8B8B8B;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    padding: 0.3rem 0.5rem;
+  }
