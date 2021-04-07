@@ -5,7 +5,7 @@ export default function Brands() {
   return (
     <div className="mx-16">
       <Title title="Top Brands"></Title>
-      <div className="grid grid-cols-5 gap-20  p-8 mb-16 mt-8">
+      <div className="grid md:grid-cols-5 sm:grid-cols-2 gap-20  p-8 mb-16 mt-8">
         <div className="w-full h-32 p-4 pt-8 ">
           <img className="w-full" src="/img/brands/lo1.png" />
         </div>

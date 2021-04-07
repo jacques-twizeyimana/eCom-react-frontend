@@ -27,7 +27,8 @@ export default function BestSeller() {
     <div>
 
     <Title title="The Bestsellers"></Title>
-    <div className={styles.bestSeller}>
+    {/* sm:bg-red-400 sm:m-0 sm:grid-cols-1 sm:h-full */}
+    <div className={" "+styles.bestSeller} >
       <div >
         <img src="/img/kfc.jpg" alt="kfc" />
         <div className={ styles.bestSellerDesc}

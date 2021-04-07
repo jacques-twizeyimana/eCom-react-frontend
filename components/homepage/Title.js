@@ -27,8 +27,8 @@ export default function Title({ title, centered, children, margin = true }) {
     <div
       className={
         centered
-          ? Titlestyles.title + " " + Titlestyles.title__center
-          : Titlestyles.title
+          ? Titlestyles.title + " my-24 " + Titlestyles.title__center
+          : Titlestyles.title + " my-24"
       }
     >
       <div className={Titlestyles.title__wrapper}>

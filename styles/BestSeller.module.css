@@ -7,6 +7,7 @@
   margin: 0 0 0 4rem;
   height: 20rem;
 }
+
 .bestSellerDesc {
   color: white;
   padding: 1.6rem 2rem 3rem 2rem;
@@ -16,4 +17,59 @@
   /* margin: 3rem 0 0 0; */
   margin: 0 auto 1rem auto;
   padding: 0.5rem 0 0 0.5rem;
+}
+.shopByCategory{
+  box-shadow: 0 15px 20px 4px #e5e7eb;
+}
+
+@media (min-width:100px) and (max-width: 640px){
+ .bestSeller{
+    height: 100%;
+    grid-template-columns: 1fr;
+    margin: 0;
+    width: 22.2rem;
+  }
+  .newProducts{
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0;
+  }
+  .stars{
+    margin-left: 4em;
+  }
+  .filter{
+    width: 12rem;
+  }
+  .homeAppliance{
+    grid-template-columns: 1fr;
+    margin: 0;
+    width: 100%;
+  }
+  .newImage{
+    width: 100%;
+  }
+
+}
+@media (min-width:645px) and (max-width:1024px){
+.bestSeller{
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 45rem;
+  margin: 0;
+  height: 100%;
+}
+.newProducts{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  width: 100%;
+}
+.filter{
+  width: 12rem;
+  margin: 0 0 1.5rem 3rem;
+}
+.homeAppliance{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  width: 100%;
+}
 }

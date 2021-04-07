@@ -1,7 +1,7 @@
 import Title from "../homepage/Title";
 import Product from "./Product";
 
-export default function RecommendedProducts() {
+export default function RecommendedProducts({ products }) {
   const initialProducts = [
     {
       id: 1,
@@ -30,11 +30,17 @@ export default function RecommendedProducts() {
       color: "#650D03",
     },
   ];
+
+  const displayProducts = products ? products : initialProducts;
+
   return (
     <div className="mx-4">
       <Title title="Recommended Products"></Title>
       <div className="products__list my-10 flex flex-wrap justify-between">
-        {initialProducts.map((product) => (
+        {displayProducts.length === 0 && (
+          <div className="font-bold ml-8">No Products to show</div>
+        )}
+        {displayProducts.map((product) => (
           <Product key={product.id} product={product}></Product>
         ))}
       </div>

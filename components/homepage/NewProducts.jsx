@@ -51,12 +51,12 @@ export default function NewProducts() {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 auto-rows-auto gap-12 w-11/12 ml-6  ">
+      <div id={"latest"} className={"grid grid-cols-4 auto-rows-auto gap-12 w-11/12 ml-6 "+styles.newProducts}>
         {newProducts.map((product) => {
           return (
             <div
               key={product.id}
-              className="bg-white shadow-2xl relative "
+              className={"bg-white relative "+styles.shopByCategory}
               onMouseOver={() => setHover(product.id)}
               onMouseLeave={() => setHover(null)}
             >
@@ -103,6 +103,7 @@ export default function NewProducts() {
                       onChange={ratingChanged}
                       size={24}
                       activeColor="#ffd700"
+                      classNames={styles.stars}
                     />
                   </div>
                   <h2>{product.price}</h2>

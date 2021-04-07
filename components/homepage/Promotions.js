@@ -35,7 +35,7 @@ export default function Promotions() {
   ];
 
   return (
-    <div className="lg:mx-16">
+    <div className="lg:mx-16" id={"shop"}>
       <Title title="Promotions"></Title>
       <div className="lg:flex">
         <div className="w-full lg:w-1/2 relative">
