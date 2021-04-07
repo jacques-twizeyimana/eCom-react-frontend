@@ -21,9 +21,9 @@ export default function Home() {
             <div className={"w-full py-24 px-5 " + styles.home}>
               <div className="grid sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-2">
                 <div className="sm:col-span-4 md:col-span-2 lg:col-span-1 content px-3 sm:px-6 md:px-12 lg:px-15 xl:px-24 ">
-                  <p className="text-white text-3xl font-black">
+                  <p className="text-white text-3xl font-black font-sans">
                     SATISFY YOUR NEEDS{" "}
-                    <span className="block mt-3">THROUGH US</span>{" "}
+                    <span className="block mt-3 font-sans">THROUGH US</span>{" "}
                   </p>
                   <p className="text-gray-300 text-lg text-left mt-12">
                     Often, the body paragraph demonstrates and develops your
@@ -32,7 +32,7 @@ export default function Home() {
                   </p>
 
                   <div className="mt-12 text-left">
-                    <button className="text-sm text-gray-300 border border-black bg-black font-bold font-mo-bold rounded-md py-4 px-7 focus:outline-none hover:border-white">
+                    <button className="text-white font-bold rounded h-12 w-36 bg-black">
                       SHOP NOW &rarr;
                     </button>
                   </div>
