@@ -25,6 +25,7 @@ html,body{
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
+  scroll-behavior: smooth;
 }
 img{
   object-fit: cover;

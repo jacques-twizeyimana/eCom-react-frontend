@@ -39,7 +39,7 @@ export default function HomePage() {
         <Title title=" Our Satisfied Customers Says" centered></Title>
         <Stories />
         <Newsletter />
-  
+
         <Footer />
       </div>
     </div>

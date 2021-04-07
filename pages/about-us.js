@@ -19,7 +19,7 @@ export default function AboutUs (){
         <Navbar />
         <div className={"container-fluid m-0 py-32 px-5 text-white " + styles.welcome}>
             <h1 className="font-black text-center text-4xl">About Us</h1>
-            <h2 className="font-light text-lg text-gray-400 mt-4 text-center">Home &rarr; About Us</h2>
+            <h2 className="font-light text-xl text-gray-200 mt-4 text-center">Home &rarr; About Us</h2>
         </div>
         <div className="bg-white px-5 pt-8 md:px-12 md:py-16 lg:px-16 lg:py-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
@@ -33,7 +33,7 @@ export default function AboutUs (){
                         <p className="font-thin mt-10">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
                         </p>
-                        <button className="my-8 bg-black text-gray-300 font-bold rounded-lg py-3 px-7 hover:bg-gray-900">GET DETAILS</button>
+                        <button className="my-8 bg-black text-gray-300 font-bold rounded-lg py-4 px-8 hover:bg-gray-900">GET DETAILS</button>
                     </div>
                 </div>
             </div>
