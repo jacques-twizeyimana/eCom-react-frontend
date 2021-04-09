@@ -26,6 +26,7 @@ html,body{
   margin: 0 !important;
   padding: 0 !important;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 img{
   object-fit: cover;
