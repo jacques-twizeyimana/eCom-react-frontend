@@ -35,11 +35,6 @@ export default function Navbar() {
             </div>
 
             <ul className={"hidden md:flex md:flex-row"} id="mobileMenu">
-              <li className="pr-5 my-2 md:my-auto sm:hidden lg:hidden xl:inline-block">
-                <Link href="/">
-                  <a> Home</a>
-                </Link>
-              </li>
               <li className="pr-5 my-2 sm:hidden lg:inline-block md:my-auto ">
                 <Link href="/#shop">
                   <a> Shop</a>
@@ -55,6 +50,11 @@ export default function Navbar() {
                       </span>
                     </sup>
                   </a>
+                </Link>
+              </li>
+              <li className="pr-5 my-2 md:my-auto sm:hidden lg:hidden xl:inline-block">
+                <Link href="/categories">
+                  <a> Categories</a>
                 </Link>
               </li>
               <li className="pr-5 my-2  sm:hidden lg:hidden xl:inline-block md:my-auto">
